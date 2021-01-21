@@ -1,0 +1,27 @@
+p {
+	color: dark_gray;
+	font-family: roboto;
+	font-size: medium;
+}
+h1 {
+	text-align: left;
+	color: dark_grey;
+	font-family: montserrat;
+	font-size: xx-large;
+}
+
+h3 {
+	font-family: roboto;
+}
+body {
+	background: linear-gradient(#e66465, #9198e5);
+}
+input {
+	border-style: dotted;
+	width: auto;
+	margin: 5px 2px;
+	border-radius: 5%;
+}
+.submit {
+	width: auto;
+}
