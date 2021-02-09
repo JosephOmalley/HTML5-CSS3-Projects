@@ -3,9 +3,9 @@
 	<head>
 		<title>Learn about the WWW</title>
 		<meta charset="utf-8">
+		<link rel="stylesheet" href="./css/One_Page_Website.css">
 	</head>
 	<body>
-	<link rel="stylesheet" href="./css/One_Page_Website.css">
 	<main>
 			<h1>Interesting facts about the World Wide Web!</h1>
 			<p>	The public square was once a means for everyday people to express their views to the public. In 
@@ -33,6 +33,63 @@
 			<details>
 			</div>	
 				<!--nav end-->
+				<!--Light box start -->
+
+				<h1>Common images of WWW:</h1>
+			<div class="row">
+				<div class="column">
+					<img src="image/img1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+				</div>
+				<div class="column">
+					<img src="image/img2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+				</div>
+				<div class="column">
+					<img src="image/img3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+				</div>
+				
+			</div>
+
+			<div id="myModal" class="modal">
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+				<div class="modal-content">
+
+					<div class="mySlides">
+						<div class="numbertext">1 / 3</div>
+						<img src="image/img1.jpg" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">2 / 3</div>
+						<img src="image/img2.jpg" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">3 / 3</div>
+						<img src="image/img3.jpg" style="width:100%">
+					</div>
+
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+
+				<div class="column">
+					<img class="demo" src="image/img1.jpg" onclick="currentSlide(1)" alt="WWW">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="image/img2.jpg" onclick="currentSlide(2)" alt="WWW">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="image/img3.jpg" onclick="currentSlide(3)" alt="WWW">
+				</div>
+			</div>
+		</div>
+	</div>
+
 			<div id="fact1">
 				<article>
 					<h1>Number 1 <br> Name of fact</h1>
@@ -62,7 +119,6 @@
 					<h1>Number 5 <br> Name of fact</h1>
 					<p>contents of fact</p>
 				</article>	
-			</div>
 		
 	
 		<!--CONTACT START -->
@@ -80,6 +136,8 @@
 		</div>
 		<!--CONTACT END-->
 		</main>
+
+		<script src="JS/One_Page.js"></script>
 	</body>
 	<div id="footer">	
 	<footer>
@@ -87,3 +145,6 @@
 	</footer>
 	
 </html>
+
+
+
